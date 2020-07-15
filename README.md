@@ -5,5 +5,5 @@ Intuito do APP é para ajudar jogadores de League Of Legends
 
 # Tela inicial
 
-<img src='https://imgur.com/6ARNioM' alt='flutter tutorials by mayuri ruparel'/>
+<img src='https://github.com/Vitttu/League/blob/master/imgMD/Screenshot_1.png'/>
 </a>
