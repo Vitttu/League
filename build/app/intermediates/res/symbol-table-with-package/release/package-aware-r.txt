@@ -120,6 +120,7 @@ id text2
 id time
 id title
 integer status_bar_notification_info_maxnum
+layout activity_main
 layout custom_dialog
 layout notification_action
 layout notification_action_tombstone
@@ -128,6 +129,8 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 mipmap icon
 string status_bar_notification_info_overflow
 style LaunchTheme

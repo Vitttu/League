@@ -18,8 +18,8 @@
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:icon="@mipmap/icon"
-        android:label="League" >
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="League of Time" >
         <activity
             android:name="com.example.League.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"

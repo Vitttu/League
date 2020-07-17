@@ -4,3 +4,6 @@
 -keep class com.example.League.MainActivity { <init>(); }
 # Referenced at C:\Users\jose_\Documents\FlutterAPPs\League\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:17
 -keep class io.flutter.app.FlutterApplication { <init>(); }
+# Referenced at C:\Users\jose_\Documents\FlutterAPPs\League\android\app\src\main\res\layout\activity_main.xml:2
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(...); }
+
