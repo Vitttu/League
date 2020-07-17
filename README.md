@@ -5,5 +5,5 @@ Intuito do APP é para ajudar jogadores de League Of Legends
 
 # Tela inicial
 
-<img src='https://github.com/Vitttu/League/blob/master/imgMD/Screenshot_1.png' width="250" heigth="100"/>
+<img src='https://github.com/Vitttu/League/blob/master/imgMD/Screenshot_1.gif' width="250" heigth="100"/>
 </a>
