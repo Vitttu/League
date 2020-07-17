@@ -46,8 +46,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
-    - assets/img/splash1.png
+    - assets/ScreenImg/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
