@@ -31,7 +31,7 @@ class Ahri extends StatefulWidget {
 }
 
 class _AhriState extends State<Ahri> {
-  bool _pinned = true;
+  bool _pinned = false;
   bool _snap = false;
   bool _floating = true;
 
@@ -46,7 +46,7 @@ class _AhriState extends State<Ahri> {
             floating: this._floating,
             expandedHeight: 190.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Ahri', style: TextStyle(fontSize: 25)),
+              title: Text(' ', style: TextStyle(fontSize: 25)),
               background: Image.asset(
                 'assets/ScreenImg/Ahri_0.jpg',
                 fit: BoxFit.fill
@@ -54,7 +54,75 @@ class _AhriState extends State<Ahri> {
             ),
           ),
           SliverFillRemaining(
-            child: Center(child: Text('Ahri')),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 15,
+                alignment: WrapAlignment.center,
+                children: <Widget>[
+                  Row(),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AhriSpell/Ahri_Passive.png'),
+                        )      
+                      ),
+                      child: FlatButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          //telaSkills
+                        },
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AhriSpell/AhriQ.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AhriSpell/AhriW.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AhriSpell/AhriE.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AhriSpell/AhriR.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ],
       ),

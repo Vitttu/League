@@ -31,7 +31,7 @@ class Alistar extends StatefulWidget {
 }
 
 class _AlistarState extends State<Alistar> {
-  bool _pinned = true;
+  bool _pinned = false;
   bool _snap = false;
   bool _floating = true;
 
@@ -46,7 +46,7 @@ class _AlistarState extends State<Alistar> {
             floating: this._floating,
             expandedHeight: 190.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Alistar', style: TextStyle(fontSize: 25)),
+              title: Text(' ', style: TextStyle(fontSize: 25)),
               background: Image.asset(
                 'assets/ScreenImg/Alistar_0.jpg',
                 fit: BoxFit.fill
@@ -54,7 +54,75 @@ class _AlistarState extends State<Alistar> {
             ),
           ),
           SliverFillRemaining(
-            child: Center(child: Text('Alistar')),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 15,
+                alignment: WrapAlignment.center,
+                children: <Widget>[
+                  Row(),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AlistarSpell/Alistar_Passive.png'),
+                        )      
+                      ),
+                      child: FlatButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          //telaSkills
+                        },
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AlistarSpell/AlistarQ.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AlistarSpell/AlistarW.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AlistarSpell/AlistarE.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AlistarSpell/AlistarR.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ],
       ),

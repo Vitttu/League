@@ -31,7 +31,7 @@ class Akali extends StatefulWidget {
 }
 
 class _AkaliState extends State<Akali> {
-  bool _pinned = true;
+  bool _pinned = false;
   bool _snap = false;
   bool _floating = true;
 
@@ -46,7 +46,7 @@ class _AkaliState extends State<Akali> {
             floating: this._floating,
             expandedHeight: 190.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('Akali', style: TextStyle(fontSize: 25)),
+              title: Text(' ', style: TextStyle(fontSize: 25)),
               background: Image.asset(
                 'assets/ScreenImg/Akali_0.jpg',
                 fit: BoxFit.fill
@@ -54,7 +54,75 @@ class _AkaliState extends State<Akali> {
             ),
           ),
           SliverFillRemaining(
-            child: Center(child: Text('Akali')),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 15,
+                alignment: WrapAlignment.center,
+                children: <Widget>[
+                  Row(),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AkaliSpell/Akali_Passive.png'),
+                        )      
+                      ),
+                      child: FlatButton(
+                        padding: EdgeInsets.all(0),
+                        onPressed: () {
+                          //telaSkills
+                        },
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AkaliSpell/AkaliQ.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AkaliSpell/AkaliW.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AkaliSpell/AkaliE.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                  ClipOval(
+                    child: Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Skills/AkaliSpell/AkaliR.png'),
+                        )
+                      ),
+                    ),
+                  ),
+                ],
+              ),
           ),
         ],
       ),
