@@ -38,14 +38,14 @@ Widget _introScreen() {
   return Stack(
     children: <Widget>[
       SplashScreen(
-        seconds: 3,
+        seconds: 2,
         navigateAfterSeconds: App(),
-        loaderColor: Colors.transparent,
+        //loaderColor: Colors.white,
       ),
       Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/img/splash1.png"),
+            image: AssetImage("assets/img/Splash1.png"),
             fit: BoxFit.fill,
           ),
         ),

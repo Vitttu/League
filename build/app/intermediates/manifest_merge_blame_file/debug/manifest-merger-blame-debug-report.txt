@@ -5,7 +5,7 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="15"
+8        android:minSdkVersion="20"
 9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
@@ -94,6 +94,33 @@
 67-->C:\Users\jose_\Documents\FlutterAPPs\League\android\app\src\main\AndroidManifest.xml:44:13-44
 68            android:value="2" />
 68-->C:\Users\jose_\Documents\FlutterAPPs\League\android\app\src\main\AndroidManifest.xml:45:13-30
-69    </application>
-70
-71</manifest>
+69
+70        <activity
+70-->[:url_launcher] C:\Users\jose_\Documents\FlutterAPPs\League\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+71            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+71-->[:url_launcher] C:\Users\jose_\Documents\FlutterAPPs\League\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+72            android:exported="false"
+72-->[:url_launcher] C:\Users\jose_\Documents\FlutterAPPs\League\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+73            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+73-->[:url_launcher] C:\Users\jose_\Documents\FlutterAPPs\League\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+74
+75        <provider
+75-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+76            android:name="androidx.core.content.FileProvider"
+76-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+77            android:authorities="com.example.League.fileprovider"
+77-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+78            android:exported="false"
+78-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+79            android:grantUriPermissions="true" >
+79-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+80            <meta-data
+80-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
+82                android:resource="@xml/filepaths" />
+82-->[:flutter_webview_plugin] C:\Users\jose_\Documents\FlutterAPPs\League\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
+83        </provider>
+84    </application>
+85
+86</manifest>
